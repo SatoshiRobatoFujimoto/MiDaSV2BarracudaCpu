@@ -13,7 +13,7 @@ sealed class MiDaSTest : MonoBehaviour
 
     void Start()
     {
-        // Convert the input image into a 1x256x3x256 tensor.
+        // Convert the input image into a 1x256x256x3 tensor.
         using var input = new Tensor(1, 256, 256, 3);
 
         for (var y = 0; y < 256; y++)
